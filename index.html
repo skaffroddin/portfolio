@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap">
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Sekh Affroddin - Portfolio</title>
+<style>
+
+
+
+.skills {
+        background: var(--second-bg-color);
+        padding: 4rem 9%;
+        text-align: center;
+    }
+
+    .skills .heading {
+        margin-bottom: 3rem;
+        font-size: 4rem;
+        color: var(--text-color);
+    }
+
+    .skills-content {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .skill-category {
+        text-align: center;
+    }
+
+    .skill-category h3 {
+        font-size: 2rem;
+        color: var(--text-color);
+        margin-bottom: 1rem;
+    }
+
+    .skills-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .skill-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100px;
+    }
+
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.5rem;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+    }
+
+    .skill-icon:hover {
+        filter: none;
+    }
+
+</style>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="#home" class="logo">Affroddin</a>
+        <div class='bx bx-menu' id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#about">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+        </ul>
+        <div class="top-btn">
+            <a href="#contact" class="nav-btn">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Affroddin</h1>
+            <h3>I'm a <span class="multiple-text"></span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consequatur est neque, vel, laboriosam
+                accusantium, eveniet repellendus maxime cupiditate fugiat ut? In aliquam cum maiores.</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="dp.png" alt="Profile Image">
+        </div>
+    </section>
+    <!-- Skills Section -->
+
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-content">
+            <!-- Frontend Skills -->
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="skill-icon">
+                        <h4>HTML</h4>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="skill-icon">
+                        <h4>CSS</h4>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="skill-icon">
+                        <h4>Bootstrap</h4>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="skill-icon">
+                        <h4>Tailwind CSS</h4>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon">
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="jQuery" class="skill-icon">
+                        <h4>jQuery</h4>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Backend Skills -->
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="skill-icon">
+                        <h4>PHP</h4>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/laravel.svg" alt="Laravel" class="skill-icon">
+                        <h4>Laravel</h4>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Database Skills -->
+            <div class="skill-category">
+                <h3>Databases</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="skill-icon">
+                        <h4>MySQL</h4>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Version Control -->
+            <div class="skill-category">
+                <h3>Version Control</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="skill-icon">
+                        <h4>Git</h4>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Cybersecurity Skills -->
+            <div class="skill-category">
+                <h3>Cybersecurity</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kali-linux/kali-linux-original.svg" alt="Kali Linux" class="skill-icon">
+                        <h4>Kali Linux</h4>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/burp-suite/burp-suite-original.svg" alt="Burp Suite" class="skill-icon">
+                        <h4>Burp Suite</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>I'm a <span>Web Developer</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam nulla aut cum, commodi fugit.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <!-- Vertical Timeline -->
+        <div class="timeline">
+            <div class="timeline-item">
+                <h4>BACHELOR OF COMPUTER APPLICATION (BCA)</h4>
+                <p>MAKAUT | George College Of Management & Science</p>
+                <span>June 2024 | CGPA- 8.56</span>
+            </div>
+            <div class="timeline-item">
+                <h4>12th (Discipline/Specialization)</h4>
+                <p>WBCHSE | Sarangabad High School</p>
+                <span>2017 | Marks: 47%</span>
+            </div>
+            <div class="timeline-item">
+                <h4>10th (Discipline/Specialization)</h4>
+                <p>WBBSE | Batanagar Sri Ramkrishna Ashram Vivekananda Vidyamandir</p>
+                <span>2014 | Marks: 49%</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">My <span>Portfolio</span></h2>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="dp.png" alt="">
+                <div class="main-row">
+                    <div class="row-text">
+                        <h5>Website Design</h5>
+                    </div>
+                    <div class="row-icon">
+                        <i class="bx bxl-github"></i>
+                    </div>
+                </div>
+                <h4>Website Development</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <p class="copyright">
+            &copy; Affroddin | All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap">
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Sekh Affroddin - Portfolio</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="#home" class="logo">Affroddin</a>
+        <div class='bx bx-menu' id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Skills</a></li>
+            <li><a href="#portfolio">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="top-btn">
+            <a href="#contact" class="nav-btn">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Affroddin</h1>
+            <h3>I'm a <span class="multiple-text"></span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consequatur est neque, vel, laboriosam accusantium, eveniet repellendus maxime cupiditate fugiat ut? In aliquam cum maiores.</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="dp.png" alt="Profile Image">
+        </div>
+    </section>
+   <!-- Skills Section -->
+
+<section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+    <div class="skills-content">
+        <!-- Frontend Skills -->
+        <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="skill-icon">
+                    <h4>HTML</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="skill-icon">
+                    <h4>CSS</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="skill-icon">
+                    <h4>Bootstrap</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="skill-icon">
+                    <h4>Tailwind CSS</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon">
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="jQuery" class="skill-icon">
+                    <h4>jQuery</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Backend Skills -->
+        <div class="skill-category">
+            <h3>Backend</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="skill-icon">
+                    <h4>PHP</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="Laravel" class="skill-icon">
+                    <h4>Laravel</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Database Skills -->
+        <div class="skill-category">
+            <h3>Databases</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="skill-icon">
+                    <h4>MySQL</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Version Control -->
+        <div class="skill-category">
+            <h3>Version Control</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="skill-icon">
+                    <h4>Git</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cybersecurity Skills -->
+        <div class="skill-category">
+            <h3>Cybersecurity</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kali-linux/kali-linux-original.svg" alt="Kali Linux" class="skill-icon">
+                    <h4>Kali Linux</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/burp-suite/burp-suite-original.svg" alt="Burp Suite" class="skill-icon">
+                    <h4>Burp Suite</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+    
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>I'm a <span>Web Developer</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam nulla aut cum, commodi fugit.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <!-- Vertical Timeline -->
+        <div class="timeline">
+            <div class="timeline-item">
+                <h4>BACHELOR OF COMPUTER APPLICATION (BCA)</h4>
+                <p>MAKAUT | George College Of Management & Science</p>
+                <span>June 2024 | CGPA- 8.56</span>
+            </div>
+            <div class="timeline-item">
+                <h4>12th (Discipline/Specialization)</h4>
+                <p>WBCHSE | Sarangabad High School</p>
+                <span>2017 | Marks: 47%</span>
+            </div>
+            <div class="timeline-item">
+                <h4>10th (Discipline/Specialization)</h4>
+                <p>WBBSE | Batanagar Sri Ramkrishna Ashram Vivekananda Vidyamandir</p>
+                <span>2014 | Marks: 49%</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">My <span>Portfolio</span></h2>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="dp.png" alt="">
+                <div class="main-row">
+                    <div class="row-text">
+                        <h5>Website Design</h5>
+                    </div>
+                    <div class="row-icon">
+                        <i class="bx bxl-github"></i>
+                    </div>
+                </div>
+                <h4>Website Development</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <p class="copyright">
+            &copy; Affroddin | All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
